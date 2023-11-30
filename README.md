@@ -52,5 +52,5 @@ additionally, you can search a record by a keyword, and the record will be shown
 
 ![Screenshot](images/step5.png)
  
-Summary with animation
+Summary with animation\
 ![Screenshot](images/summary.gif)
