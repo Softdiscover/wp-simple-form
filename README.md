@@ -21,7 +21,7 @@ function add_jquery()
 
 add_action('init', 'add_jquery');
 ```
-then it jquery should be loaded in frontend
+then jquery should be loaded in frontend
 
 
 ## How to use ## 
