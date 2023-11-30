@@ -12,6 +12,18 @@ To install, Please follow the steps below:
 4. Click Browse and locate the file that you downloaded and click *Install Now*
 5. After Wordpress has finished unpacking the file click on *Activate Plugin*
 
+after installed, be aware that there are some themes that don't have jquery installed like twentytwentyfour theme which comes by default in fresh WP install. To fix this, just go function.php (wp-content/themes/twentytwentyfour/functions.php) of the theme and add the next: 
+```bash
+function add_jquery()
+{
+	wp_enqueue_script('jquery');
+}
+
+add_action('init', 'add_jquery');
+```
+then it jquery should be loaded in frontend
+
+
 ## How to use ## 
 Create a page or post, then add the two next shortcodes to create records and show data: 
 ```bash
@@ -40,3 +52,5 @@ additionally, you can search a record by a keyword, and the record will be shown
 
 ![Screenshot](images/step5.png)
  
+Summary with animation
+![Screenshot](images/summary.gif)
